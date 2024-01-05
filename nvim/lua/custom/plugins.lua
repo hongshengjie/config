@@ -8,6 +8,8 @@ local plugins = {
         "typescript-language-server",
         "eslint-lsp",
         "prettier",
+        "clangd",
+        "clang-format",
       },
     },
   },
@@ -42,6 +44,14 @@ local plugins = {
     build = function()
       vim.cmd [[silent! GoInstallDeps]]
     end,
+  },
+
+    {
+    "rust-lang/rust.vim",
+    ft = "rust",
+    init = function ()
+      vim.g.rustfmt_autosave = 1
+    end
   },
 
 }
