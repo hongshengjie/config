@@ -1,0 +1,27 @@
+metadata_dir = "/home/hongshengjie/Data/garage/meta"
+data_dir = "/home/hongshengjie/Data/garage/data"
+db_engine = "sqlite"
+
+replication_factor = 1
+
+rpc_bind_addr = "[::]:3901"
+rpc_public_addr = "127.0.0.1:3901"
+rpc_secret = "572f70d27300c8540059c1db8b907c05a034751ab2a81c0814b088cbd28c5b0c"
+
+[s3_api]
+s3_region = "garage"
+api_bind_addr = "[::]:3900"
+root_domain = ".localhost"
+
+[s3_web]
+bind_addr = "[::]:3902"
+root_domain = ".localhost"
+index = "index.html"
+
+[k2v_api]
+api_bind_addr = "[::]:3904"
+
+[admin]
+api_bind_addr = "[::]:3903"
+admin_token = "rP/JzMzwTNFPio43gbNVuTZgrSse7MfBqMnIg4y55X4="
+metrics_token = "oQVg9Fd8zCsoiw8jLo9KcP0YO7J6gNHEiMJs7N5yxZs="
