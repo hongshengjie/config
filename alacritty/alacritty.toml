@@ -5,6 +5,8 @@ size = 16
 family = "JetBrainsMono Nerd Font"
 style = "Regular"
 
-[shell]
+[terminal]
+
+[terminal.shell]
 args = ["--login", "--command", "tmux new-session -A -D -s main"]
-program = "/usr/local/bin/fish"
+program = "/usr/bin/fish"
